@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>one</title>
+</head>
+<body>
+     
+</body>
+<script>
+    //  1、JQuery的$(document).ready(function(){})，$(function(){})与原生JS的window.onload有什么不同？
+    // （1）执行时间
+    // window.onload必须等到页面内包括图片、音频、视频在内的所有元素加载完毕后才能执行
+    // $(document).ready()是DOM结构绘制完毕后就执行，无需对图像或外部资源加载等待，从而执行起来更快
+    // （2）编写个数不同
+    // window.onload不能同时编写多个，如果有多个放法，只会执行一个
+    // $(document).ready()可以同时编写多个，并且都可以得到执行
+    // （3）简化写法
+    // window.onload没有简化写法
+    // $(document).ready(function(){})可以简化成$(function(){})
+
+
+    // 2、JQuery和Zepto的区别？各自的使用场景？
+    // （1）相同：
+    //    1>Zepto最初是为移动端开发的库，是JQuery的轻量级替代品，因为它的API和JQuery相似，而文件更小
+    //    2>Zepto最大的优势是它的文件大小，只有8k多，是目前功能完备的库中最小一个，尽管不大，Zepto所提供的工具足以满足开发程序的需要
+    //    3>大多数在JQuery中常用的API和方法Zepto都有，Zepto中还有一些JQuery中没有的
+    //    4>因为Zepto的API大部分都能和JQuery兼容，所以用起来极其容易，如果熟悉JQuery，就很能容易掌握Zepto
+    // （2）不同：
+    //    1>Zepto更轻量级
+    //    2>Zepto是JQuery的精简，针对移动端去除了大量JQuery的兼容代码
+    //    3>针对移动端，Zepto有一些基本的触摸事件可以用来做触摸屏交互（tap事件、swipe事件），Zepto不支持IE浏览器
+    //    4>DOM操作的区别：添加ID时JQuery不会生效Zepto会生效
+    //    5>事件触发的区别：使用JQuery时load事件的处理函数不会执行；使用Zepto时load事件的处理函数会执行
+    //    6>事件委托的区别：Zepto中，选择器上所有的委托事件都依次放入到一个队列中，而在JQuery中则委托成独立的多个事件
+    //    7>width()与height()的区别：Zepto由盒模型box-sizing决定，用.width()返回赋值的width，用.css('width')返回border等的结果；JQuery会忽略盒模型，始终返回内容区域的宽高，不包含padding，border
+    //    8>offset()的区别：Zepto返回top,left,width,height;jQuery返回width,height；Zepto无法获取隐藏元素宽高，JQuery可以
+    //    9>Zepto中没有为原型定义extend方法，而JQuery有
+    //    10>Zepto的each方法只能遍历数组，不能遍历JSON对象
+    
+    3、你是如何使用JQuery中的Ajax的？
+    $.ajax,这个是JQuery对ajax封装的最基础的函数，通过使用
+
+</script>
+</html>   
